@@ -1,7 +1,26 @@
 aid: hundeland
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hundeland.png
 name: Hundeland
-description: Hundeland is a company surfaced as a portfolio company of point-nine and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Hundeland was a German direct-to-consumer online shop for dog supplies — dog food,
+  treats, accessories, and pet-care products — and a portfolio company of the Point Nine venture
+  capital firm. The hundeland.de storefront has been permanently closed ("dauerhaft geschlossen")
+  and now 302-redirects to Pets Premium (petspremium.de), operated by the same company, which
+  carries the same brands and product range; former customers must re-register there. Hundeland
+  publishes no public API, developer portal, documentation, or SDKs, so the enrichment pipeline
+  found no API surface to harvest. This record is retained as a Point Nine portfolio lead with the
+  real closure status captured; the only machine-verifiable artifact is the domain-security probe of
+  the still-resolving hundeland.de host that serves the redirect.
 url: https://raw.githubusercontent.com/api-evangelist/hundeland/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +28,22 @@ x-backed-by:
 - point-nine
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: closed
+x-status-note: hundeland.de permanently closed; 302 redirects to petspremium.de (Pets Premium),
+  operated by the same company.
+x-successor: https://www.petspremium.de
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Pets
+- Dogs
+- Pet Supplies
+- Ecommerce
+- Retail
+- Germany
+- Closed
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +51,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/hundeland-domain-security.yml
 - type: Website
   url: http://www.hundeland.de
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
