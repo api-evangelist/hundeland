@@ -32,7 +32,7 @@ x-status: closed
 x-status-note: hundeland.de permanently closed; 302 redirects to petspremium.de (Pets Premium),
   operated by the same company.
 x-successor: https://www.petspremium.de
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
