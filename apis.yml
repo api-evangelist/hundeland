@@ -41,7 +41,7 @@ x-backed-by:
 - point-nine
 x-tier: stub
 x-tier-reason: portfolio-lead
-x-status: closed
+x-status: defunct
 x-status-note: hundeland.de permanently closed; 302 redirects to petspremium.de (Pets Premium),
   operated by the same company.
 x-successor: https://www.petspremium.de
@@ -57,6 +57,7 @@ tags:
 - Retail
 - Germany
 - Closed
+- Defunct
 tags_raw:
 - Company
 - Pets
@@ -66,6 +67,7 @@ tags_raw:
 - Retail
 - Germany
 - Closed
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
